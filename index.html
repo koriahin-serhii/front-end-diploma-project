@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main</title>
     <script defer src="./scripts/index.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Main page</h1>
+    <!-- <h1>Main page</h1> -->
     <!-- <a href="http://127.0.0.1:5501/page2.html"><button>Join meetup</button></a> -->
+    <!-- <button id="toSecondPage">Join meetup</button> -->
 
-    <button id="toSecondPage">Join meetup</button>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="logo"></div>
+        <div class="search-container">
+          <input type="search" class="search-input" placeholder="Search event" />
+          <input type="text" placeholder="Mountain View, CA" />
+          <button class="search-button">
+            <img src="./assets/img/svg/search-icon-white.svg" />
+          </button>
+        </div>
+      </div>
+      <div class="nav-links">
+        <img src="./assets/img/svg/language-icon.svg">
+        <a href="#">English</a>
+        <a href="#">Log in</a>
+        <button class="signup-button">Sign up</button>
+      </div>
+    </nav>
   </body>
 </html>
