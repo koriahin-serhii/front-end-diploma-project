@@ -51,7 +51,6 @@ body {
 .search-container input:nth-child(2) {
   border-left: 1px solid #ddd;
   width: 150px;
-  
 }
 .search-container button {
   width: 42px;
@@ -90,7 +89,6 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
-
 
 .main {
   display: flex;
@@ -144,10 +142,10 @@ body {
   min-width: 215px;
 }
 
- /* footer */
- .footer {
+/* footer */
+.footer {
   background-color: #212121;
-  color: #F6F7F8;
+  color: #f6f7f8;
   padding: 20px 60px;
   font-size: 14px;
   margin-top: 50px;
@@ -167,7 +165,6 @@ body {
   margin-bottom: 40px;
   border-bottom: 1px solid #707070;
   font-size: 16px;
-
 }
 
 .get-started-button {
@@ -207,11 +204,15 @@ body {
 }
 
 .footer-social {
-  text-align: left;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
   margin-bottom: 24px;
 }
 
-.footer-social p {
+.footer-content p {
   margin-bottom: 12px;
 }
 
@@ -237,4 +238,9 @@ body {
 
 .footer-bottom a:hover {
   color: #fff;
+}
+.app-buttons {
+  display: flex;
+  gap: 22px;
+  padding-right: 10px;
 }
