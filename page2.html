@@ -4,12 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Second page</title>
+    <link rel="stylesheet" href="./styles/style2.css" />
     <script defer src="./scripts/index2.js"></script>
   </head>
   <body>
-    <h1>Second page</h1>
-    <!-- <a href="http://127.0.0.1:5501/index.html"><button>Return main page</button></a> -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="logo" id="toMainPage"></div>
+        <div class="search-container">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search event"
+          />
+          <input type="text" placeholder="Mountain View, CA" />
+          <button class="search-button">
+            <img src="./assets/img/svg/search-icon-white.svg" />
+          </button>
+        </div>
+      </div>
+      <div class="nav-links">
+        <img src="./assets/img/svg/language-icon.svg" />
+        <a href="#">English</a>
+        <a href="#">Log in</a>
+        <button class="signup-button">Sign up</button>
+      </div>
+    </nav>
 
-    <button id="toMainPage">Return main page</button>
+
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-top">
+          <p>Create your own Meetup group.</p>
+          <button class="get-started-button">Get Started</button>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Your Account</h4>
+            <a href="#">Sign up</a>
+            <a href="#">Log in</a>
+            <a href="#">Help</a>
+            <a href="#">Become an Affiliate</a>
+          </div>
+          <div class="footer-column">
+            <h4>Discover</h4>
+            <a href="#">Groups</a>
+            <a href="#">Calendar</a>
+            <a href="#">Topics</a>
+            <a href="#">Cities</a>
+            <a href="#">Online Events</a>
+            <a href="#">Local Guides</a>
+            <a href="#">Make Friends</a>
+          </div>
+          <div class="footer-column">
+            <h4>Meetup</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Meetup Pro</a>
+            <a href="#">Careers</a>
+            <a href="#">Apps</a>
+            <a href="#">Podcast</a>
+          </div>
+        </div>
+        <p>Follow us</p>
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="#"
+              ><img src="./assets/img/svg/facebook-icon.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="./assets/img/svg/twitter-icon.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="./assets/img/svg/youtube-icon.svg" alt="YouTube"
+            /></a>
+            <a href="#"
+              ><img src="./assets/img/svg/instagram-icon.svg" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="./assets/img/svg/tiktok-icon.svg" alt="TikTok"
+            /></a>
+          </div>
+          <div class="app-buttons">
+            <a href="#">
+              <img src="./assets/img/png/google-play-img.png" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/png/app-store-img.png" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2024 Meetup</span>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Do Not Sell or Share My Personal Data</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

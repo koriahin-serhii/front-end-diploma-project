@@ -1,5 +1,202 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px 10px 25px;
+  height: 64px;
+  max-width: 1512px;
+  margin: 0 auto;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 35px;
+  background-image: url("../assets/img/png/meetup-img.png");
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.search-container input {
+  border: none;
+  padding: 8px 12px;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+}
+.search-input::before {
+  content: url("../assets/img/svg/search-icon.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.search-container input:nth-child(2) {
+  border-left: 1px solid #ddd;
+  width: 150px;
+}
+.search-container button {
+  width: 42px;
+  height: 42px;
+  background-color: #ff4f64;
+  border: 1px solid #ff4f64;
+  border-radius: 0 5px 5px 0;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.nav-links img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.signup-button {
+  background-color: #00798a;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+  background-color: #212121;
+  color: #f6f7f8;
+  padding: 20px 60px;
+  font-size: 14px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 70px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #707070;
+  font-size: 16px;
+}
+
+.get-started-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.footer-content p {
+  margin-bottom: 12px;
+}
+
+.social-icons a {
+  margin: 0 32px 0 0;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom {
+  text-align: left;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+.app-buttons {
+  display: flex;
+  gap: 22px;
+  padding-right: 10px;
+}
