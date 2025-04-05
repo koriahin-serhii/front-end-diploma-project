@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Second page</title>
+    <link rel="stylesheet" href="./styles/style2.css" />
     <script defer src="./scripts/index2.js"></script>
   </head>
   <body>
-    <h1>Second page</h1>
-    <!-- <a href="http://127.0.0.1:5501/index.html"><button>Return main page</button></a> -->
-
-    <button id="toMainPage">Return main page</button>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="logo" id="toMainPage"></div>
+        <div class="search-container">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search event"
+          />
+          <input type="text" placeholder="Mountain View, CA" />
+          <button class="search-button">
+            <img src="./assets/img/svg/search-icon-white.svg" />
+          </button>
+        </div>
+      </div>
+      <div class="nav-links">
+        <img src="./assets/img/svg/language-icon.svg" />
+        <a href="#">English</a>
+        <a href="#">Log in</a>
+        <button class="signup-button">Sign up</button>
+      </div>
+    </nav>
   </body>
 </html>
