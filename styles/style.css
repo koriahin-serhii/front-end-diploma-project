@@ -105,6 +105,8 @@ body {
   max-width: 1200px;
   width: 100%;
   gap: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 100px;
 }
 
 .header-text {
@@ -140,6 +142,84 @@ body {
   width: 100%;
   height: auto;
   min-width: 215px;
+}
+
+
+
+
+
+
+
+
+
+/* Friendships Section */
+.friendships {
+  max-width: 1200px;
+  width: 100%;
+}
+.friendships h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #212121;
+}
+.friendships p {
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 28px;
+  max-width: 850px;
+  line-height: 1.5;
+}
+.friendship-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.friendship-cards .card {
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 32px);
+  max-width: calc(33.333% - 32px);
+}
+
+.friendship-cards .card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.friendship-cards .card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.friendship-cards .card p {
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 16px;
+}
+
+.friendship-cards .card a {
+  color: #00798a;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Responsive Design for 400px width */
+@media (max-width: 400px) {
+  .friendship-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .friendship-cards .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 /* footer */
