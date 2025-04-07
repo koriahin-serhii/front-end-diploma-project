@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  min-width: 400px;
 }
 .navbar {
   display: flex;
@@ -149,12 +150,68 @@ body {
 
 
 
+/* Popular Cities Section */
+.popular-cities {
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.popular-cities h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #212121;
+}
+
+.popular-cities p {
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 28px;
+}
+
+.cities-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.city {
+  text-align: center;
+}
+
+.city img {
+  width: 205px;
+  height: 205px;
+  margin-bottom: 24px;
+}
+
+.city p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Styles for screens with max-width 400px */
+@media (max-width: 400px) {
+  .cities-grid {
+    gap: 15px;
+  }
+
+  .city img {
+    width: 153px;
+    height: 153px;
+  }
+
+  .city p {
+    font-size: 12px;
+  }
+}
 
 /* Meetup Works Section */
 .meetup-works {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
   margin-bottom: 64px;
 }
 
@@ -176,7 +233,7 @@ body {
   background-color: rgb(151, 202, 209, 0.08);
   border-radius: 8px;
   padding: 32px 0 24px 24px;
-  width: calc(50% - 16px); 
+  width: calc(50% - 16px);
   display: flex;
   align-items: flex-start;
   gap: 24px;
