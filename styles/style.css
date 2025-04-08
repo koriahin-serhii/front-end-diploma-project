@@ -100,6 +100,7 @@ body {
   gap: 64px;
 }
 
+/* Header section */
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -144,6 +145,18 @@ body {
   height: auto;
   min-width: 215px;
 }
+
+/* Styles for screens with max-width 400px */
+@media (max-width: 400px) {
+  .header-text h1 {
+    font-size: 25px;
+  }
+  .header-text p {
+    font-size: 12px;
+  }
+}
+
+
 
 /* Top Categories Section */
 .top-categories {
@@ -492,4 +505,17 @@ body {
   display: flex;
   gap: 22px;
   padding-right: 10px;
+}
+
+/* Styles for screens with max-width 400px */
+@media (max-width: 400px) {
+  .footer {
+    padding: 20px 16px;
+  }
+  .app-buttons {
+    display: none;
+  }
+  .footer-bottom a {
+    display: none;
+  }
 }
