@@ -145,6 +145,96 @@ body {
   min-width: 215px;
 }
 
+/* Join Meetup Section */
+.join-meetup {
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  width: 100%;
+  padding: 36px 56px;
+  border-radius: 8px;
+}
+
+.join-meetup-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.join-text {
+  flex: 1;
+}
+
+.join-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.join-text img {
+  display: none;
+}
+
+.join-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 16px;
+}
+
+.join-text .signup-button-red {
+  background-color: #e32359;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 192px;
+  height: 40px;
+}
+
+.join-image {
+  flex: 1;
+  text-align: right;
+}
+
+.join-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for screens with max-width 400px */
+@media (max-width: 400px) {
+  .join-meetup {
+    padding: 15px;
+  }
+
+  .join-meetup-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .join-text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .join-text img {
+    display: block;
+    width: 238px;
+    margin: auto;
+  }
+
+  .join-image img {
+    display: none;
+  }
+
+  .join-text p {
+    font-size: 12px;
+  }
+}
+
 /* Top Categories Section */
 .top-categories {
   max-width: 1200px;
@@ -191,6 +281,10 @@ body {
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
+  }
+  .top-categories h2 {
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 
@@ -239,6 +333,11 @@ body {
 @media (max-width: 400px) {
   .cities-grid {
     gap: 15px;
+  }
+
+  .popular-cities h2 {
+    font-size: 20px;
+    font-weight: 600;
   }
 
   .city img {
