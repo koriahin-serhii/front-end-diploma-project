@@ -157,6 +157,220 @@ body {
 }
 
 
+
+
+
+
+/* Upcoming Events Section */
+.upcoming-events {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.upcoming-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.upcoming-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.upcoming-header .see-all-events {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00798a;
+  text-decoration: none;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 36px;
+}
+
+.event-card {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #212121;
+}
+
+.event-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  padding-right: 35px;
+  gap: 12px;
+  
+}
+
+.event-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.event-info .event-category {
+  font-size: 14px;
+  font-weight: 500;
+  color: #707070;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.event-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.event-date .event-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.event-data {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 6px;
+}
+.detail-item .event-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.event-online {
+  display: none;
+}
+.event-attendees {
+  display: none
+}
+
+/* Styles for screens with max-width 400px */
+@media (max-width: 400px) {
+  .upcoming-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .upcoming-header h2 {
+    font-size: 20px;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+
+  .event-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 10px;
+    border-radius: 0;
+  }
+
+  .event-card img {
+    height: 55px;
+    width: 95px;
+  }
+
+  .event-info {
+    margin-top: 0;
+    gap: 2px;
+  }
+
+  .event-info h3 {
+    font-size: 9px;
+    font-weight: 500;
+    order: 2;
+  }
+
+  .event-info .event-category {
+    font-size: 8px;
+    font-weight: 400;
+    order: 3;
+    margin-top: 8px;
+  }
+
+  .event-details {
+    order: 1;
+  }
+
+  .event-date {
+    font-size: 8px;
+    color: #7c6f50;
+  }
+
+  .event-date .event-icon {
+    display: none;
+  }
+
+  .event-data {
+    display: none;
+  }
+  .event-attendees {
+    display: block;
+    font-size: 8px;
+    font-weight: 400;
+    order: 4;
+    margin-top: 28px;
+    color: #707070;
+
+  }
+  .event-online {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 7px;
+    font-weight: 500;
+    color: #707070;
+    order: 4;
+    margin-top: 2px;
+
+  }
+  .event-online .event-online-icon {
+    width: 9px;
+    height: 9px;
+    display: block;
+  }
+
+  .mini-display-none {
+    display: none;
+  }
+}
+
 /* Join Meetup Section */
 .join-meetup {
   background-color: #f9f9f9;
