@@ -746,11 +746,35 @@ body {
 @media (max-width: 400px) {
   .works-cards .card {
     width: 100%;
+    gap : 15px;
+    padding: 20px 0 15px 15px;
   }
   .meetup-works h2 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 18px;
+  }
+  .works-cards {
+    gap: 12px;
+  }
+  .works-cards .card img {
+    width: 25px;
+    height: 25px;
+    }
+  .works-cards .card-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .works-cards .card-content h3 {
+    font-size: 12px;
+  }
+  .works-cards .card-content p {
+    font-size: 9px;
+  }
+  .works-cards .card-content a {
+    font-size: 10px;
   }
 }
 
@@ -808,14 +832,31 @@ body {
 
 /* Responsive Design for 400px width */
 @media (max-width: 400px) {
+  .friendships h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 27px;
+  }
+  .friendships p {
+    display: none;
+  }
   .friendship-cards {
     flex-direction: column;
     gap: 20px;
   }
-
   .friendship-cards .card {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+  .friendship-cards .card h3 {
+    font-size: 16px;
+  }
+  .friendship-cards .card p {
+    display: block;
+    font-size: 12px;
+  }
+  .friendship-cards .card a {
+    font-size: 12px;
   }
 }
 
