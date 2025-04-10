@@ -240,6 +240,18 @@ main {
   font-size: 14px;
   font-weight: 500;
   background-color: #f6f7f8;
+  color: #212121;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-align-last: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.filters select:hover {
+  background-color: #eaeaea;
 }
 
 /* events */
