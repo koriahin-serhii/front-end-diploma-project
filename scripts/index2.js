@@ -102,13 +102,22 @@ function showEvents() {
     const eventElement = document.createElement("div");
     eventElement.classList.add("event");
     eventElement.innerHTML = `
-        <img src="${event.image}" alt="${event.title}">
-        <h3>${event.title}</h3>
-        <p>${event.description}</p>
-        <p>${event.date.toLocaleString()}</p>
-        <p>${event.attendees} attendees</p>
-        <p>${event.category}</p>
-        <p>${event.distance} miles away</p>
+            <img src=${event.image} alt=${event.title}/>
+            <div class="event-info">
+              <p class="event-date">${event.date}<p>
+              <h3>${event.title}</h3>
+              <p class="event-category">${event.category}</p>
+              <div class="event-online">
+                <img src="assets/img/svg/camera.svg" alt="Camera icon"
+                  class="event-online-icon"/>
+                <span>Online Event</span>
+              </div>
+              ${
+                event.attendees !== undefined
+                  ? `<p class="event-attendees">${event.attendees} attendees</p>`
+                  : ""
+              }
+            </div>
       `;
     eventsContainer.appendChild(eventElement);
   });
