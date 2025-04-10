@@ -257,6 +257,8 @@ main {
   gap: 12px;
   padding: 16px 0 0 0;
   border-top: 1px solid #d9d9d9;
+  width: 100%;
+  max-width: 600px;
 }
 .event img {
   width: 160px;

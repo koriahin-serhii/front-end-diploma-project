@@ -104,14 +104,18 @@ function showEvents() {
     eventElement.innerHTML = `
             <img src=${event.image} alt=${event.title}/>
             <div class="event-info">
-              <p class="event-date">${event.date}<p>
+              <p class="event-date">${formatEventDate(event.date)}<p>
               <h3>${event.title}</h3>
               <p class="event-category">${event.category}</p>
-              <div class="event-online">
-                <img src="assets/img/svg/camera.svg" alt="Camera icon"
-                  class="event-online-icon"/>
-                <span>Online Event</span>
-              </div>
+              ${
+                event.type === "online"
+                  ? `<div class="event-online">
+                      <img src="assets/img/svg/camera.svg" alt="Camera icon"
+                        class="event-online-icon"/>
+                      <span>Online Event</span>
+                    </div>`
+                  : ""
+              }
               ${
                 event.attendees !== undefined
                   ? `<p class="event-attendees">${event.attendees} attendees</p>`
@@ -121,6 +125,20 @@ function showEvents() {
       `;
     eventsContainer.appendChild(eventElement);
   });
+}
+
+function formatEventDate(date) {
+  const options = {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "UTC",
+    timeZoneName: "short",
+  };
+  return new Intl.DateTimeFormat("en-US", options).format(date).toUpperCase();
 }
 
 categorySelect.addEventListener("change", showEvents);
