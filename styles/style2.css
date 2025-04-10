@@ -228,6 +228,7 @@ main {
   align-items: center;
   gap: 18px;
   margin-top: 18px;
+  margin-bottom: 56px;
 }
 .filters select {
   padding: 16px;
@@ -245,11 +246,12 @@ main {
 /* event-map */
 .event-map {
   display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
+  flex-direction: column;
+  justify-content: center;
   /* align-items: center; */
   text-align: right;
-  flex: 1;
+  /* align-items: flex-start; */
+  /* flex: 1; */
   width: 100%;
 }
 .map-container {

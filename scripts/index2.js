@@ -70,3 +70,51 @@ const eventsStore = [
     distance: 15,
   },
 ];
+
+const typeSelect = document.getElementById("type");
+const categorySelect = document.getElementById("category");
+const distanceSelect = document.getElementById("distance");
+const eventsContainer = document.getElementById("events");
+
+function showEvents() {
+  eventsContainer.innerHTML = "";
+  const type = typeSelect.value;
+  const category = categorySelect.value;
+  const distance = distanceSelect.value;
+
+  let filteredEvents = eventsStore.filter((event) => {
+    if (category !== "all" && event.category !== selectedCategory) {
+      return false;
+    }
+    if (distance !== "all") {
+      if (distance === "25" && event.distance > 25) return false;
+      if (distance === "50" && event.distance > 50) return false;
+      if (distance === "100" && event.distance > 100) return false;
+    }
+    if (type !== "all" && event.type !== type) {
+      return false;
+    }
+    return true;
+  });
+
+  eventsContainer.innerHTML = "";
+  filteredEvents.forEach((event) => {
+    const eventElement = document.createElement("div");
+    eventElement.classList.add("event");
+    eventElement.innerHTML = `
+        <img src="${event.image}" alt="${event.title}">
+        <h3>${event.title}</h3>
+        <p>${event.description}</p>
+        <p>${event.date.toLocaleString()}</p>
+        <p>${event.attendees} attendees</p>
+        <p>${event.category}</p>
+        <p>${event.distance} miles away</p>
+      `;
+    eventsContainer.appendChild(eventElement);
+  });
+}
+
+categorySelect.addEventListener("change", showEvents);
+typeSelect.addEventListener("change", showEvents);
+distanceSelect.addEventListener("change", showEvents);
+showEvents();
