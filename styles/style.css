@@ -156,9 +156,68 @@ body {
   }
 }
 
+/* Events Section */
+.events {
+  max-width: 1200px;
+  width: 100%;
+}
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.events-header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  
+}
+.events-header-left h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.events-header-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #00798a;
+  background-color: rgb(151, 202, 209, 0.12);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.events-header-search .pencil-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+.events-header .see-all-events {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00798a;
+  text-decoration: none;
+}
 
 
-
+/* Styles for screens with max-width 400px */
+@media (max-width: 400px) {
+  .events-header-left h2 {
+    font-size: 20px;
+  }
+  .events-header-search {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .events-header-search .pencil-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
 
 
 /* Upcoming Events Section */
@@ -643,6 +702,11 @@ body {
 @media (max-width: 400px) {
   .works-cards .card {
     width: 100%;
+  }
+  .meetup-works h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
   }
 }
 
