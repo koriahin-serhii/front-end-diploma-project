@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 400px;
+  min-width: 370px;
 }
 .navbar {
   display: flex;
@@ -48,7 +48,6 @@ body {
   width: 16px;
   height: 16px;
 }
-
 .search-container input:nth-child(2) {
   border-left: 1px solid #ddd;
   width: 150px;
@@ -90,7 +89,7 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
-
+/* Main container */
 .main {
   display: flex;
   justify-content: center;
@@ -110,25 +109,21 @@ body {
   gap: 40px;
   padding-bottom: 100px;
 }
-
 .header-text {
   max-width: 600px;
 }
-
 .header-text h1 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.4;
 }
-
 .header-text p {
   font-size: 16px;
   color: #555;
   margin-bottom: 30px;
   line-height: 1.6;
 }
-
 .join-button {
   background-color: #00798a;
   color: white;
@@ -138,7 +133,6 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-
 .header-image img {
   max-width: 380px;
   width: 100%;
@@ -172,7 +166,6 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  
 }
 .events-header-left h2 {
   font-size: 28px;
@@ -190,7 +183,6 @@ body {
   padding: 12px;
   border-radius: 8px;
 }
-
 .events-header-search .pencil-icon {
   width: 22px;
   height: 22px;
@@ -202,7 +194,6 @@ body {
   color: #00798a;
   text-decoration: none;
 }
-
 
 /* Styles for screens with max-width 400px */
 @media (max-width: 400px) {
@@ -219,38 +210,32 @@ body {
   }
 }
 
-
 /* Upcoming Events Section */
 .upcoming-events {
   max-width: 1200px;
   width: 100%;
 }
-
 .upcoming-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
 }
-
 .upcoming-header h2 {
   font-size: 28px;
   font-weight: 600;
 }
-
 .upcoming-header .see-all-events {
   font-size: 16px;
   font-weight: 500;
   color: #00798a;
   text-decoration: none;
 }
-
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 36px;
 }
-
 .event-card {
   border-radius: 8px;
   overflow: hidden;
@@ -258,34 +243,28 @@ body {
   flex-direction: column;
   color: #212121;
 }
-
 .event-card img {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
-
 .event-info {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
   padding-right: 35px;
   gap: 12px;
-  
 }
-
 .event-info h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
 }
-
 .event-info .event-category {
   font-size: 14px;
   font-weight: 500;
   color: #707070;
 }
-
 .event-details {
   display: flex;
   flex-direction: column;
@@ -293,7 +272,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
-
 .event-date {
   display: flex;
   align-items: center;
@@ -301,19 +279,16 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
-
 .detail-item {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-
 .event-date .event-icon {
   width: 20px;
   height: 20px;
   display: inline-block;
 }
-
 .event-data {
   display: flex;
   align-items: center;
@@ -325,12 +300,11 @@ body {
   height: 20px;
   display: inline-block;
 }
-
 .event-online {
   display: none;
 }
 .event-attendees {
-  display: none
+  display: none;
 }
 
 /* Styles for screens with max-width 400px */
@@ -340,16 +314,13 @@ body {
     align-items: flex-start;
     gap: 10px;
   }
-
   .upcoming-header h2 {
     font-size: 20px;
   }
-
   .events-grid {
     grid-template-columns: 1fr;
     gap: 23px;
   }
-
   .event-card {
     overflow: hidden;
     display: flex;
@@ -359,43 +330,35 @@ body {
     padding-top: 10px;
     border-radius: 0;
   }
-
   .event-card img {
     height: 55px;
     width: 95px;
   }
-
   .event-info {
     margin-top: 0;
     gap: 2px;
   }
-
   .event-info h3 {
     font-size: 9px;
     font-weight: 500;
     order: 2;
   }
-
   .event-info .event-category {
     font-size: 8px;
     font-weight: 400;
     order: 3;
     margin-top: 8px;
   }
-
   .event-details {
     order: 1;
   }
-
   .event-date {
     font-size: 8px;
     color: #7c6f50;
   }
-
   .event-date .event-icon {
     display: none;
   }
-
   .event-data {
     display: none;
   }
@@ -406,7 +369,6 @@ body {
     order: 4;
     margin-top: 28px;
     color: #707070;
-
   }
   .event-online {
     display: flex;
@@ -417,14 +379,12 @@ body {
     color: #707070;
     order: 4;
     margin-top: 2px;
-
   }
   .event-online .event-online-icon {
     width: 9px;
     height: 9px;
     display: block;
   }
-
   .mini-display-none {
     display: none;
   }
@@ -438,34 +398,28 @@ body {
   padding: 36px 56px;
   border-radius: 8px;
 }
-
 .join-meetup-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-
 .join-text {
   flex: 1;
 }
-
 .join-text h2 {
   font-size: 28px;
   font-weight: 600;
   color: #212121;
 }
-
 .join-text img {
   display: none;
 }
-
 .join-text p {
   font-size: 1rem;
   color: #555;
   margin-top: 16px;
 }
-
 .join-text .signup-button-red {
   background-color: #e32359;
   color: white;
@@ -477,12 +431,10 @@ body {
   width: 192px;
   height: 40px;
 }
-
 .join-image {
   flex: 1;
   text-align: right;
 }
-
 .join-image img {
   max-width: 100%;
   height: auto;
@@ -493,28 +445,23 @@ body {
   .join-meetup {
     padding: 15px;
   }
-
   .join-meetup-content {
     flex-direction: column;
     text-align: center;
   }
-
   .join-text h2 {
     font-size: 20px;
     font-weight: 600;
     text-align: left;
   }
-
   .join-text img {
     display: block;
     width: 238px;
     margin: auto;
   }
-
   .join-image img {
     display: none;
   }
-
   .join-text p {
     font-size: 12px;
   }
@@ -525,12 +472,10 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-
 .top-categories h2 {
   font-size: 28px;
   font-weight: 700;
 }
-
 .categories-grid {
   margin-top: 24px;
   display: flex;
@@ -538,7 +483,6 @@ body {
   gap: 16px;
   flex-wrap: wrap;
 }
-
 .category {
   background-color: rgb(151, 202, 209, 0.08);
   border-radius: 8px;
@@ -547,13 +491,11 @@ body {
   width: 135px;
   height: 112px;
 }
-
 .category img {
   width: 20px;
   height: 20px;
   margin-bottom: 6px;
 }
-
 .category p {
   font-size: 16px;
   font-weight: 500;
@@ -578,37 +520,31 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-
 .popular-cities h2 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
   color: #212121;
 }
-
 .popular-cities p {
   font-size: 16px;
   color: #707070;
   margin-bottom: 28px;
 }
-
 .cities-grid {
   display: flex;
   justify-content: space-around;
   gap: 40px;
   flex-wrap: wrap;
 }
-
 .city {
   text-align: center;
 }
-
 .city img {
   width: 205px;
   height: 205px;
   margin-bottom: 24px;
 }
-
 .city p {
   font-size: 20px;
   font-weight: 600;
@@ -619,17 +555,14 @@ body {
   .cities-grid {
     gap: 15px;
   }
-
   .popular-cities h2 {
     font-size: 20px;
     font-weight: 600;
   }
-
   .city img {
     width: 153px;
     height: 153px;
   }
-
   .city p {
     font-size: 12px;
   }
@@ -640,21 +573,18 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-
 .meetup-works h2 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 24px;
   color: #212121;
 }
-
 .works-cards {
   display: flex;
   justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
 }
-
 .works-cards .card {
   background-color: rgb(151, 202, 209, 0.08);
   border-radius: 8px;
@@ -664,33 +594,28 @@ body {
   align-items: flex-start;
   gap: 24px;
 }
-
 .works-cards .card img {
   width: 40px;
   height: 40px;
   flex-shrink: 0; /* fixed icon size */
 }
-
 .works-cards .card-content {
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
 .works-cards .card-content h3 {
   font-size: 20px;
   font-weight: 600;
   color: #212121;
 }
-
 .works-cards .card-content p {
   font-size: 16px;
   color: #212121;
   max-width: 370px;
   line-height: 1.5;
 }
-
 .works-cards .card-content a {
   color: #00798a;
   text-decoration: none;
@@ -736,30 +661,25 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .friendship-cards .card {
   border-radius: 8px;
   flex: 1 1 calc(33.333% - 32px);
   max-width: calc(33.333% - 32px);
 }
-
 .friendship-cards .card img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 24px;
 }
-
 .friendship-cards .card h3 {
   font-size: 18px;
   margin-bottom: 12px;
 }
-
 .friendship-cards .card p {
   font-size: 16px;
   color: #707070;
   margin-bottom: 16px;
 }
-
 .friendship-cards .card a {
   color: #00798a;
   text-decoration: none;
@@ -789,12 +709,10 @@ body {
   margin-top: 50px;
   width: 100%;
 }
-
 .footer-content {
   max-width: 1120px;
   margin: 0 auto;
 }
-
 .footer-top {
   display: flex;
   align-items: center;
@@ -804,7 +722,6 @@ body {
   border-bottom: 1px solid #707070;
   font-size: 16px;
 }
-
 .get-started-button {
   background-color: transparent;
   color: #fff;
@@ -813,67 +730,54 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .footer-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
 }
-
 .footer-column {
   flex: 1;
   margin-right: 20px;
 }
-
 .footer-column h4 {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
 .footer-column a {
   display: block;
   color: #bbb;
   text-decoration: none;
   margin-bottom: 7px;
 }
-
 .footer-column a:hover {
   color: #fff;
 }
-
 .footer-social {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-between;
-
   margin-bottom: 24px;
 }
-
 .footer-content p {
   margin-bottom: 12px;
 }
-
 .social-icons a {
   margin: 0 32px 0 0;
 }
-
 .social-icons img {
   width: 30px;
   height: 30px;
 }
-
 .footer-bottom {
   text-align: left;
   padding-top: 20px;
 }
-
 .footer-bottom a {
   color: #bbb;
   text-decoration: none;
   margin: 0 10px;
 }
-
 .footer-bottom a:hover {
   color: #fff;
 }
