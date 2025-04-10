@@ -83,7 +83,7 @@ function showEvents() {
   const distance = distanceSelect.value;
 
   let filteredEvents = eventsStore.filter((event) => {
-    if (category !== "all" && event.category !== selectedCategory) {
+    if (category !== "all" && event.category !== category) {
       return false;
     }
     if (distance !== "all") {

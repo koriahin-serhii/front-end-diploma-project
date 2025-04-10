@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-width: 370px;
+  color: #212121;
 }
 .navbar {
   display: flex;
@@ -203,11 +204,9 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.3;
-  color: #212121;
 }
 .header-text p {
   font-size: 16px;
-  color: #212121;
   margin-bottom: 30px;
   line-height: 1.5;
 }
@@ -360,7 +359,6 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  color: #212121;
 }
 .event-card img {
   width: 100%;
@@ -529,7 +527,6 @@ body {
 .join-text h2 {
   font-size: 28px;
   font-weight: 600;
-  color: #212121;
 }
 .join-text img {
   display: none;
@@ -618,7 +615,6 @@ body {
 .category p {
   font-size: 16px;
   font-weight: 500;
-  color: #212121;
   line-height: 1.5;
 }
 
@@ -643,7 +639,6 @@ body {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #212121;
 }
 .popular-cities p {
   font-size: 16px;
@@ -696,7 +691,6 @@ body {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 24px;
-  color: #212121;
 }
 .works-cards {
   display: flex;
@@ -727,11 +721,9 @@ body {
 .works-cards .card-content h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #212121;
 }
 .works-cards .card-content p {
   font-size: 16px;
-  color: #212121;
   max-width: 370px;
   line-height: 1.5;
 }
@@ -746,7 +738,7 @@ body {
 @media (max-width: 400px) {
   .works-cards .card {
     width: 100%;
-    gap : 15px;
+    gap: 15px;
     padding: 20px 0 15px 15px;
   }
   .meetup-works h2 {
@@ -760,7 +752,7 @@ body {
   .works-cards .card img {
     width: 25px;
     height: 25px;
-    }
+  }
   .works-cards .card-content {
     text-align: left;
     display: flex;
